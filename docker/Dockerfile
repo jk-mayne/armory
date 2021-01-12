@@ -121,9 +121,9 @@ RUN ln -s /opt/src/exploitdb/searchsploit /usr/local/bin/searchsploit
 WORKDIR /opt/src
 
 # Going to increment this everytime I want to update armory.
-RUN touch /tmp/revision145
+RUN touch /tmp/revision146
 
-RUN apt-get install vim
+RUN apt-get -y install vim
 
 
 RUN git clone https://github.com/jk-mayne/armory.git
