@@ -1,3 +1,17 @@
 <html>
 testing....
+
+{% for gw in port.meta.Gowitness %}
+
+    <div>
+      {% if gw.screenshot_file|file_exists %}
+      <a href="{{ gw.screenshot_file|get_file_data }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ gw.screenshot_file|get_file_data }}" class="w-100">
+
+      </a>
+      {% else %}
+      <p>No image file found</p>
+      {% endif %}
+    </div>
+
 </html>
