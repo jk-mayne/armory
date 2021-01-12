@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_q',
     'armory2.armory_main.apps.ArmoryMainConfig',
-    'gowitnessPage',
 ]
 
 MIDDLEWARE = [
