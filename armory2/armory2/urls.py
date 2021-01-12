@@ -23,7 +23,7 @@ import glob
 import os
 
 urlpatterns = [
-    # path('/', admin.site.urls),
+    path('/', admin.site.urls),
     # path('api/', include('armory2.armory_main.urls')),
     path('', main_view.index, name="armory_main.index")
 ]
