@@ -13,3 +13,7 @@ spec = importlib.util.spec_from_file_location(
 )
 views = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(views)
+
+urlpatterns = [
+    path('', views.index, name="index"),
+]
