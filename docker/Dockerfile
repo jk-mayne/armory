@@ -121,7 +121,7 @@ RUN ln -s /opt/src/exploitdb/searchsploit /usr/local/bin/searchsploit
 WORKDIR /opt/src
 
 # Going to increment this everytime I want to update armory.
-RUN touch /tmp/revision140
+RUN touch /tmp/revision142
 
 
 
@@ -129,6 +129,7 @@ RUN touch /tmp/revision140
 RUN git clone https://github.com/jk-mayne/armory.git
 WORKDIR /opt/src/armory
 RUN git checkout gowitnessPage
+RUN git pull
 CMD ["echo", "Installing Armory"]
 RUN pip3 install django # Not sure why this doesn't work from the setup
 RUN python3 setup.py install
