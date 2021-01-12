@@ -6,6 +6,13 @@ tmux start-server
 
 tmux new-session -d -s $session
 
+tmux send-keys "armory2-manage createsuperuser"
+tmux send-keys "admin"
+tmux send-keys "jkennedy@depthsecurity.com"
+tmux send-keys "admin"
+tmux send-keys "admin"
+
+
 tmux send-keys "armory2-manage runserver 0.0.0.0:8099" C-m
 
 tmux splitw -v -p 50
