@@ -13,8 +13,8 @@ def index(request):
 
    # basedomains = BaseDomain.objects.all().order_by('name')
     #p.meta.get('Gowitness')
-    p.meta.get('Gowitness')
-    print(meta)
+    #p.meta.get('Gowitness')
+    #print(meta)
 
 
     #data[p.id].append('Gowitness')
