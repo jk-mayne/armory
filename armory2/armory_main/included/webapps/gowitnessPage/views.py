@@ -12,5 +12,9 @@ from django.views.decorators.csrf import csrf_exempt
 def index(request):
 
    # basedomains = BaseDomain.objects.all().order_by('name')
+	#p.meta.get('Gowitness')
+	print(p.meta.get('Gowitness'))
+
+    #data[p.id].append('Gowitness')
 
     return render(request, 'gowitnessPage/index.html')
